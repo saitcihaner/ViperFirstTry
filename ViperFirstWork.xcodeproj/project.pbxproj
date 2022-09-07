@@ -9,21 +9,49 @@
 /* Begin PBXBuildFile section */
 		83BF928F28C9010A008D8902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF928E28C9010A008D8902 /* AppDelegate.swift */; };
 		83BF929128C9010A008D8902 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF929028C9010A008D8902 /* SceneDelegate.swift */; };
-		83BF929328C9010A008D8902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF929228C9010A008D8902 /* ViewController.swift */; };
-		83BF929628C9010A008D8902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BF929428C9010A008D8902 /* Main.storyboard */; };
 		83BF929828C9010B008D8902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BF929728C9010B008D8902 /* Assets.xcassets */; };
 		83BF929B28C9010B008D8902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BF929928C9010B008D8902 /* LaunchScreen.storyboard */; };
+		83BF92A928C90571008D8902 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92A828C90571008D8902 /* HomeRouter.swift */; };
+		83BF92AC28C90788008D8902 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92AA28C90788008D8902 /* HomeViewController.swift */; };
+		83BF92AD28C90788008D8902 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83BF92AB28C90788008D8902 /* HomeViewController.xib */; };
+		83BF92B128C907B4008D8902 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92AF28C907B4008D8902 /* HomeTableViewCell.swift */; };
+		83BF92B228C907B4008D8902 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83BF92B028C907B4008D8902 /* HomeTableViewCell.xib */; };
+		83BF92B428C9091A008D8902 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92B328C9091A008D8902 /* HomeEntity.swift */; };
+		83BF92B728C90975008D8902 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92B628C90975008D8902 /* Network.swift */; };
+		83BF92BA28C909AD008D8902 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92B928C909AD008D8902 /* BaseRequest.swift */; };
+		83BF92BD28C90B49008D8902 /* HomePhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92BC28C90B49008D8902 /* HomePhotoRequest.swift */; };
+		83BF92C028C90BD0008D8902 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83BF92BF28C90BD0008D8902 /* Alamofire */; };
+		83BF92C228C90CE4008D8902 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92C128C90CE4008D8902 /* HomeInteractor.swift */; };
+		83BF92C428C90D45008D8902 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92C328C90D45008D8902 /* HomePresenter.swift */; };
+		83BF92C728C91017008D8902 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 83BF92C628C91017008D8902 /* Kingfisher */; };
+		83BF92CF28C915DC008D8902 /* HomeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92CE28C915DC008D8902 /* HomeDetailRouter.swift */; };
+		83BF92D128C91657008D8902 /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92D028C91657008D8902 /* HomeDetailPresenter.swift */; };
+		83BF92D428C91713008D8902 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF92D228C91713008D8902 /* HomeDetailViewController.swift */; };
+		83BF92D528C91713008D8902 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83BF92D328C91713008D8902 /* HomeDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83BF928B28C9010A008D8902 /* ViperFirstWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperFirstWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BF928E28C9010A008D8902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BF929028C9010A008D8902 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83BF929228C9010A008D8902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83BF929528C9010A008D8902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83BF929728C9010B008D8902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83BF929A28C9010B008D8902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83BF929C28C9010B008D8902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BF92A828C90571008D8902 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		83BF92AA28C90788008D8902 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		83BF92AB28C90788008D8902 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		83BF92AF28C907B4008D8902 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		83BF92B028C907B4008D8902 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		83BF92B328C9091A008D8902 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		83BF92B628C90975008D8902 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		83BF92B928C909AD008D8902 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		83BF92BC28C90B49008D8902 /* HomePhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePhotoRequest.swift; sourceTree = "<group>"; };
+		83BF92C128C90CE4008D8902 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		83BF92C328C90D45008D8902 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		83BF92CE28C915DC008D8902 /* HomeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailRouter.swift; sourceTree = "<group>"; };
+		83BF92D028C91657008D8902 /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		83BF92D228C91713008D8902 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		83BF92D328C91713008D8902 /* HomeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BF92C728C91017008D8902 /* Kingfisher in Frameworks */,
+				83BF92C028C90BD0008D8902 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +86,156 @@
 		83BF928D28C9010A008D8902 /* ViperFirstWork */ = {
 			isa = PBXGroup;
 			children = (
+				83BF92BB28C90B34008D8902 /* Request */,
+				83BF92B828C909A0008D8902 /* Base */,
+				83BF92B528C9096B008D8902 /* Network */,
+				83BF92C828C91587008D8902 /* HomeDetail */,
+				83BF92A228C901CD008D8902 /* Home */,
 				83BF928E28C9010A008D8902 /* AppDelegate.swift */,
 				83BF929028C9010A008D8902 /* SceneDelegate.swift */,
-				83BF929228C9010A008D8902 /* ViewController.swift */,
-				83BF929428C9010A008D8902 /* Main.storyboard */,
 				83BF929728C9010B008D8902 /* Assets.xcassets */,
 				83BF929928C9010B008D8902 /* LaunchScreen.storyboard */,
 				83BF929C28C9010B008D8902 /* Info.plist */,
 			);
 			path = ViperFirstWork;
+			sourceTree = "<group>";
+		};
+		83BF92A228C901CD008D8902 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92AE28C907A1008D8902 /* Cells */,
+				83BF92A728C90562008D8902 /* Router */,
+				83BF92A628C9055D008D8902 /* Entity */,
+				83BF92A528C90554008D8902 /* Presenter */,
+				83BF92A428C9054D008D8902 /* Interactor */,
+				83BF92A328C90548008D8902 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		83BF92A328C90548008D8902 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92AA28C90788008D8902 /* HomeViewController.swift */,
+				83BF92AB28C90788008D8902 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83BF92A428C9054D008D8902 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92C128C90CE4008D8902 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		83BF92A528C90554008D8902 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92C328C90D45008D8902 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		83BF92A628C9055D008D8902 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92B328C9091A008D8902 /* HomeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		83BF92A728C90562008D8902 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92A828C90571008D8902 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		83BF92AE28C907A1008D8902 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92AF28C907B4008D8902 /* HomeTableViewCell.swift */,
+				83BF92B028C907B4008D8902 /* HomeTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		83BF92B528C9096B008D8902 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92B628C90975008D8902 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		83BF92B828C909A0008D8902 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92B928C909AD008D8902 /* BaseRequest.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		83BF92BB28C90B34008D8902 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92BC28C90B49008D8902 /* HomePhotoRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		83BF92C828C91587008D8902 /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92CD28C915C1008D8902 /* Entity */,
+				83BF92CC28C915BC008D8902 /* Router */,
+				83BF92CB28C915B1008D8902 /* Interactor */,
+				83BF92CA28C915A8008D8902 /* Presenter */,
+				83BF92C928C915A1008D8902 /* View */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
+		83BF92C928C915A1008D8902 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92D228C91713008D8902 /* HomeDetailViewController.swift */,
+				83BF92D328C91713008D8902 /* HomeDetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83BF92CA28C915A8008D8902 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92D028C91657008D8902 /* HomeDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		83BF92CB28C915B1008D8902 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		83BF92CC28C915BC008D8902 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				83BF92CE28C915DC008D8902 /* HomeDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		83BF92CD28C915C1008D8902 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +254,10 @@
 			dependencies = (
 			);
 			name = ViperFirstWork;
+			packageProductDependencies = (
+				83BF92BF28C90BD0008D8902 /* Alamofire */,
+				83BF92C628C91017008D8902 /* Kingfisher */,
+			);
 			productName = ViperFirstWork;
 			productReference = 83BF928B28C9010A008D8902 /* ViperFirstWork.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +286,10 @@
 				Base,
 			);
 			mainGroup = 83BF928228C9010A008D8902;
+			packageReferences = (
+				83BF92BE28C90BD0008D8902 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				83BF92C528C91017008D8902 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 83BF928C28C9010A008D8902 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +306,9 @@
 			files = (
 				83BF929B28C9010B008D8902 /* LaunchScreen.storyboard in Resources */,
 				83BF929828C9010B008D8902 /* Assets.xcassets in Resources */,
-				83BF929628C9010A008D8902 /* Main.storyboard in Resources */,
+				83BF92D528C91713008D8902 /* HomeDetailViewController.xib in Resources */,
+				83BF92B228C907B4008D8902 /* HomeTableViewCell.xib in Resources */,
+				83BF92AD28C90788008D8902 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +319,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83BF929328C9010A008D8902 /* ViewController.swift in Sources */,
+				83BF92BA28C909AD008D8902 /* BaseRequest.swift in Sources */,
 				83BF928F28C9010A008D8902 /* AppDelegate.swift in Sources */,
+				83BF92CF28C915DC008D8902 /* HomeDetailRouter.swift in Sources */,
+				83BF92B428C9091A008D8902 /* HomeEntity.swift in Sources */,
+				83BF92C228C90CE4008D8902 /* HomeInteractor.swift in Sources */,
+				83BF92B128C907B4008D8902 /* HomeTableViewCell.swift in Sources */,
+				83BF92A928C90571008D8902 /* HomeRouter.swift in Sources */,
 				83BF929128C9010A008D8902 /* SceneDelegate.swift in Sources */,
+				83BF92D128C91657008D8902 /* HomeDetailPresenter.swift in Sources */,
+				83BF92B728C90975008D8902 /* Network.swift in Sources */,
+				83BF92BD28C90B49008D8902 /* HomePhotoRequest.swift in Sources */,
+				83BF92AC28C90788008D8902 /* HomeViewController.swift in Sources */,
+				83BF92D428C91713008D8902 /* HomeDetailViewController.swift in Sources */,
+				83BF92C428C90D45008D8902 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		83BF929428C9010A008D8902 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83BF929528C9010A008D8902 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83BF929928C9010B008D8902 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +476,9 @@
 				DEVELOPMENT_TEAM = W4SY8W6JTT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ViperFirstWork/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ViperFirstWork;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +504,9 @@
 				DEVELOPMENT_TEAM = W4SY8W6JTT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ViperFirstWork/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ViperFirstWork;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -360,6 +544,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83BF92BE28C90BD0008D8902 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		83BF92C528C91017008D8902 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83BF92BF28C90BD0008D8902 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83BF92BE28C90BD0008D8902 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		83BF92C628C91017008D8902 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83BF92C528C91017008D8902 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83BF928328C9010A008D8902 /* Project object */;
 }
