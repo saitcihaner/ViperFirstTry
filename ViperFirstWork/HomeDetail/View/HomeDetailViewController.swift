@@ -19,9 +19,22 @@ protocol HomeDetailViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.didLoad()
+        print(self.navigationController?.viewControllers.count)
     }
-
-}
+     deinit{
+         print("detail controller uçtu")
+     }
+//     override func viewDidAppear(_ animated: Bool) {
+//         Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { [weak self] _ in
+//             guard let self = self else {return}
+//             self.navigationController?.popViewController(animated: true)
+//         }
+//     }
+     @IBAction func deneme(_ sender: Any) {
+         presenter?.router?.closeVc()
+     }
+   
+ }
 
 
 

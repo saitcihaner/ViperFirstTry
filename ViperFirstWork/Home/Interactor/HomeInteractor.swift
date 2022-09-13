@@ -7,9 +7,9 @@
 
 import Foundation
 
-protocol HomeInteractorInputProtocol {
+protocol HomeInteractorInputProtocol  {
     func fetchPhotos()
-    var presenter : HomeInteractorOutputProtocol? {get}
+     var presenter : HomeInteractorOutputProtocol? {get}
 }
 
 final class HomeInteractor : HomeInteractorInputProtocol {
@@ -23,7 +23,9 @@ final class HomeInteractor : HomeInteractorInputProtocol {
         }
     }
     
-    var presenter: HomeInteractorOutputProtocol?
-    
+    weak var presenter: HomeInteractorOutputProtocol?
+    deinit{
+        print("interactor uçtu")
+    }
     
 }

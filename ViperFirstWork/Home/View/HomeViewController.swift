@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol HomeViewProtocol {
+protocol HomeViewProtocol : AnyObject {
     func uploadTableView()
 }
 
@@ -23,11 +23,16 @@ final class HomeViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let k = UIApplication.shared.keyWindow?.rootViewController as! UINavigationController
+        print(UIApplication.shared.keyWindow?.rootViewController?.presentedViewController)
+
         self.title = "Ana Sayfa"
         presenter?.didLoad()
         // Do any additional setup after loading the view.
     }
-
+    deinit{
+        print("view uçtu")
+    }
 }
 
 extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
@@ -44,7 +49,14 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
         return 120
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(HomeDetailRouter.init().openVc(model: presenter?.model[indexPath.row] ?? HomeResponse.init(albumID: nil, id: nil, title: nil, url: nil, thumbnailURL: nil)), animated: true)
+        
+    //    self.navigationController?.pushViewController(HomeDetailViewController.init(nibName: "HomeDetailViewController", bundle: nil), animated: true)
+//
+//        let vc1 = HomeDetailRouter.init().openVc(model: presenter?.model[indexPath.row] ?? HomeResponse.init(albumID: nil, id: nil, title: nil, url: nil, thumbnailURL: nil))
+//        self.navigationController?.pushViewController(HomeDetailRouter.init().openVc(model: presenter?.model[indexPath.row] ?? HomeResponse.init(albumID: nil, id: nil, title: nil, url: nil, thumbnailURL: nil)) ?? UIViewController.init(), animated: true)
+        
+        self.presenter?.router?.pushVC(vc: HomeDetailViewController.init(nibName: "HomeDetailViewController", bundle: nil))
+//        self.presenter?.router?.pushVC(vc: HomeDetailRouter.init().openVc(model: HomeResponse.init(albumID: nil, id: nil, title: "fdf", url: "dfsfsd", thumbnailURL: "fdsfdsfdsf")))
 //        if self.isModal {
 //            print("evet navım ")
 //        }
@@ -63,16 +75,16 @@ extension HomeViewController : HomeViewProtocol {
     
     
 }
-
-
-extension UIViewController {
-
-    var isModal: Bool {
-
-        let presentingIsModal = presentingViewController != nil
-        let presentingIsNavigation = navigationController?.presentingViewController?.presentedViewController == navigationController
-        let presentingIsTabBar = tabBarController?.presentingViewController is UITabBarController
-
-        return presentingIsModal || presentingIsNavigation || presentingIsTabBar
-    }
-}
+//
+//
+//extension UIViewController {
+//
+//    var isModal: Bool {
+//
+//        let presentingIsModal = presentingViewController != nil
+//        let presentingIsNavigation = navigationController?.presentingViewController?.presentedViewController == navigationController
+//        let presentingIsTabBar = tabBarController?.presentingViewController is UITabBarController
+//
+//        return presentingIsModal || presentingIsNavigation || presentingIsTabBar
+//    }
+//}

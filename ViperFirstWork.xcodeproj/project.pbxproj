@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83520CB828D12CB5009A2447 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83520CB728D12CB5009A2447 /* MainRouter.swift */; };
 		83BF928F28C9010A008D8902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF928E28C9010A008D8902 /* AppDelegate.swift */; };
 		83BF929128C9010A008D8902 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF929028C9010A008D8902 /* SceneDelegate.swift */; };
 		83BF929828C9010B008D8902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BF929728C9010B008D8902 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83520CB728D12CB5009A2447 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		83BF928B28C9010A008D8902 /* ViperFirstWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperFirstWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BF928E28C9010A008D8902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BF929028C9010A008D8902 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83520CB628D12CA0009A2447 /* MainRoutable */ = {
+			isa = PBXGroup;
+			children = (
+				83520CB728D12CB5009A2447 /* MainRouter.swift */,
+			);
+			path = MainRoutable;
+			sourceTree = "<group>";
+		};
 		83BF928228C9010A008D8902 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		83BF928D28C9010A008D8902 /* ViperFirstWork */ = {
 			isa = PBXGroup;
 			children = (
+				83520CB628D12CA0009A2447 /* MainRoutable */,
 				83BF92BB28C90B34008D8902 /* Request */,
 				83BF92B828C909A0008D8902 /* Base */,
 				83BF92B528C9096B008D8902 /* Network */,
@@ -324,6 +335,7 @@
 				83BF92CF28C915DC008D8902 /* HomeDetailRouter.swift in Sources */,
 				83BF92B428C9091A008D8902 /* HomeEntity.swift in Sources */,
 				83BF92C228C90CE4008D8902 /* HomeInteractor.swift in Sources */,
+				83520CB828D12CB5009A2447 /* MainRouter.swift in Sources */,
 				83BF92B128C907B4008D8902 /* HomeTableViewCell.swift in Sources */,
 				83BF92A928C90571008D8902 /* HomeRouter.swift in Sources */,
 				83BF929128C9010A008D8902 /* SceneDelegate.swift in Sources */,

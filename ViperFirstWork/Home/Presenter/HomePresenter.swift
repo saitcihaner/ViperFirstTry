@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HomePresenterProtocol {
+protocol HomePresenterProtocol  {
     func didLoad()
     func getPhotos()
     var interactor : HomeInteractorInputProtocol? {get}
@@ -15,7 +15,7 @@ protocol HomePresenterProtocol {
     var router : HomeRouterProtocol? {get}
     var model : [HomeResponse] {get}
 }
-protocol HomeInteractorOutputProtocol {
+protocol HomeInteractorOutputProtocol : AnyObject {
     func getPhotos (model:[HomeResponse])
 }
 
@@ -34,7 +34,9 @@ final class HomePresenter : HomePresenterProtocol {
     var view: HomeViewProtocol?
     
     var router: HomeRouterProtocol?
-    
+    deinit{
+        print("presenter uçtu")
+    }
 
 }
 
